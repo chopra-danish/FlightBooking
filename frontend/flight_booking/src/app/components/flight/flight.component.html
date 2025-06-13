@@ -1,0 +1,46 @@
+<div class="container">
+    <h1>Flight Management</h1>
+  
+    <form (submit)="addFlight()">
+      <h3>Add New Flight</h3>
+      <input type="text" placeholder="Flight Number" [(ngModel)]="newFlight.flightNumber" name="flightNumber" required />
+      <input type="text" placeholder="Airline" [(ngModel)]="newFlight.airline" name="airline" required />
+      <input type="text" placeholder="Origin" [(ngModel)]="newFlight.origin" name="origin" required />
+      <input type="text" placeholder="Destination" [(ngModel)]="newFlight.destination" name="destination" required />
+      <input type="datetime-local" placeholder="Departure Time" [(ngModel)]="newFlight.departureTime" name="departureTime" required />
+      <input type="datetime-local" placeholder="Arrival Time" [(ngModel)]="newFlight.arrivalTime" name="arrivalTime" required />
+      <input type="number" placeholder="Price" [(ngModel)]="newFlight.price" name="price" required />
+      <button type="submit" class="btn btn-primary">Add Flight</button>
+    </form>
+  
+    <hr />
+  
+    <h3>All Flights</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Flight Number</th>
+          <th>Airline</th>
+          <th>Origin</th>
+          <th>Destination</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let flight of flights">
+          <td>{{ flight.id }}</td>
+          <td>{{ flight.flightNumber }}</td>
+          <td>{{ flight.airline }}</td>
+          <td>{{ flight.origin }}</td>
+          <td>{{ flight.destination }}</td>
+          <td>{{ flight.departureTime }}</td>
+          <td>{{ flight.arrivalTime }}</td>
+          <td>{{ flight.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

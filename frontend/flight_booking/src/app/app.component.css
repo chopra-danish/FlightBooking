@@ -1,0 +1,84 @@
+/* app.component.css */
+
+/* General Container */
+.home-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  /* Main Heading */
+  h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Menu Section */
+  .main-menu {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .main-menu h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  .menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  

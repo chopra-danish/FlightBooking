@@ -1,0 +1,31 @@
+.container {
+    padding: 20px;
+  }
+  
+  h1, h3 {
+    color: #007bff;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
